@@ -9,7 +9,8 @@ class SortedArray
 			self.add(element)
 		end
 			
-
+		array1 = SortedArray.new([4,5,2,2,])
+		array1.add(element)
 	end
 
 	def size
@@ -60,58 +61,3 @@ class SortedArray
 
 
 end
-
-
-# source = [2,3,4,7,9]
-# sorted_array = SortedArray.new
-# sorted_array.internal_arr = @source
-
-# sorted_array.first_larger_index(4)
-# sorted_array.first_larger_index(6)
-# sorted_array.first_larger_index(8)
-
-=begin
-	
-
-def sort_method(array,start_ind=0,end_ind=array.length)
-	
-end
-
-FIRST LARGER INDEX
-
-def first_larger_index_method(arr,tar,start=0,end=array.length)
-
-larger_index = ?
-start_point = 0
-end_point = array.length
-
-1) find mid_point
-
-	mid_point = (start_point + end_point) / 2
-
-2) evaluate mid_point <=> target
-
- a) 	if mid_point == target
-			larger_index = mid_point+1
-			return larger_index
-
- b) 	elsif mid_point > target
-			start_point = 0
-			end_point = mid_point
-			first_larger_index_method(arr,tar,start_point,end_point)
-
- c)		elsif mid_point < target
-			start_point = mid_point
-			end_point = array.length
-			first_larger_index_method(arr,tar,start_point,end_point)
-		end
-				=> which calls first_larger_index_method recursively
-				=> mid_point = (start_point + end_point) /2
-				=> mid_point <=> target
-
-	=> Keep recursively calling the method until mid_point == target
-	=> and return larger_index at the end of the method
-	
-
-
-=end
